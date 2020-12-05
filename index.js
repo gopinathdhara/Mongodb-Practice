@@ -43,6 +43,9 @@ app.patch('/departments/:id',  middlewares.getIDAsInteger, routes.departments.up
 app.delete('/departments/:id', middlewares.getIDAsInteger, routes.departments.deleteDepartment); 
 
 //my development
+app.get('/', function (req, res) {  
+  res.send('Welcome to Basic node express app !');  
+}); 
 app.get('/viewtasklist', middlewares.getConnectionWithKnex,routes.task.listAllTasks);
 
 
