@@ -10,7 +10,7 @@ const database = {
 };*/
 
 const database = {
-  host: 'mysql1.000webhost.com',
+  host: 'mysql2.000webhost.com',
   port: 80,
   user: 'id15599353_awesometodoappdb',
   password: '&@uT4br/I%8{AYx-',
