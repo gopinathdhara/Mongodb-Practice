@@ -14,7 +14,7 @@ const database = {
   port: 3306,
   user: 'id15599353_awesometodoappdb',
   password: '&@uT4br/I%8{AYx-',
-  database: 'id15599353_awesometodoapp'
+  database: 'id15599353_awesometodoapp' 
 };
 
 module.exports = {
