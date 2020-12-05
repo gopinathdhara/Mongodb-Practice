@@ -79,4 +79,4 @@ const knex = require('knex')({
   connection: settings.database
 });
 app.locals.knex = knex;
-app.listen(settings.APIServerPort , () => console.info(`API Server is running on ${settings.APIServerPort}`));
+app.listen(process.env.PORT || settings.APIServerPort , () => console.info(`API Server is running on ${settings.APIServerPort}`));
