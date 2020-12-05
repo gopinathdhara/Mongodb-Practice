@@ -11,7 +11,7 @@ const database = {
 
 const database = {
   host: 'mysql2.000webhost.com',
-  port: 80,
+  port: 3306,
   user: 'id15599353_awesometodoappdb',
   password: '&@uT4br/I%8{AYx-',
   database: 'id15599353_awesometodoapp' 
