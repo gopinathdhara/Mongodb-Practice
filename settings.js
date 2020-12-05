@@ -10,7 +10,7 @@ const database = {
 };*/
 
 const database = {
-  host: 'localhost',
+  host: 'https://in.000webhost.com',
   port: 3306,
   user: 'id15599353_awesometodoappdb',
   password: '&@uT4br/I%8{AYx-',
