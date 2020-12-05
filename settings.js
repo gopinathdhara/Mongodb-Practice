@@ -10,11 +10,11 @@ const database = {
 };*/
 
 const database = {
-  host: 'mysql2.000webhost.com',
+  host: 'sql12.freemysqlhosting.net',
   port: 3306,
-  user: 'id15599353_awesometodoappdb',
-  password: '&@uT4br/I%8{AYx-',
-  database: 'id15599353_awesometodoapp' 
+  user: 'sql12380448',
+  password: 'wiIv6kf8V8',
+  database: 'sql12380448' 
 };
 
 module.exports = {
