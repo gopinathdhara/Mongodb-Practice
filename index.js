@@ -47,6 +47,7 @@ app.get('/viewtasklist', middlewares.getConnectionWithKnex,routes.task.listAllTa
 
 
 //#############implement promise####################
+/*
 app.get('/getemppromise/:id',function(request,response){
     const id = +request.params.id;
     routes.practice_promise.dbfetch1(id).then((result1)=>{
@@ -58,7 +59,7 @@ app.get('/getemppromise/:id',function(request,response){
     }); 
 
 })
-
+*/
 
  /*
  connection.connect(error => {
