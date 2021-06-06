@@ -1,0 +1,60 @@
+[
+    {
+      "name":"john",
+      "vehicle":[
+        {
+          "car":{
+            "name":"johncar",
+            "price":100,
+            "comapny":"XYZ Pvt Ltd"
+          }
+        },
+        {
+          "bike":{
+            "name":"johnbike",
+            "price":200,
+            "comapny":"ABC Pvt Ltd"
+          }
+        }
+      ]
+    },
+    {
+      "name":"vicky",
+      "vehicle":[
+        {
+          "car":{
+            "name":"vickycar",
+            "price":300,
+            "comapny":"CDE Pvt Ltd"
+          }
+        },
+        {
+          "bike":{
+            "name":"vickybike",
+            "price":400,
+            "comapny":"EFG Pvt Ltd"
+          }
+        }
+      ]
+    },
+    {
+      "name":"mike",
+      "vehicle":[
+        {
+          "car":{
+            "name":"mikecar",
+            "price":500,
+            "comapny":"IJK Pvt Ltd"
+          }
+        },
+        {
+          "bike":{
+            "name":"mikebike",
+            "price":600,
+            "comapny":"UVW Pvt Ltd"
+          }
+        }
+      ]
+    }
+
+]

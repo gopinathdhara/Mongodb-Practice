@@ -1,0 +1,30 @@
+<script>
+var x=[ 
+ {"name":"gopi","age":30,subjects:[  {"id":1, "name":"math"} ,{"id":2, "name":"english"} ]  },
+ {"name":"raghu","age":20,subjects:[  {"id":20, "name":"math1"} ,{"id":200, "name":"english1"} ]},
+ {"name":"raghu","age":20,subjects:[  {"id":30, "name":"math2"} ,{"id":21, "name":"english2"} ]},
+];
+/*
+takes array returns array
+console.log(x);
+var y=x.map(function(eachElm){
+	return eachElm*eachElm;
+});*/
+console.log(x);
+var y=x.map(function(eachElm){
+	let obj={};
+	obj.name=eachElm.name;
+	obj.age=eachElm.age;
+	obj.subjects=eachElm.subjects.map(function(eachElmSubj){
+		return eachElmSubj.name;
+	});
+	return obj;
+});
+console.log(y);
+var z=[];
+if(z.length>0){
+
+console.log("not empty");
+}
+//
+</script>

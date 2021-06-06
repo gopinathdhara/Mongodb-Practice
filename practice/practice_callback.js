@@ -1,4 +1,4 @@
-console.log("practice callback");
+console.log("practice callback start");
 var myDBRequest;
 var express = require('express');
 var app = express();
@@ -28,7 +28,7 @@ let sub = (a,b)=>{
 }
 
 console.log("subtarction"+ sub(5,2));*/
-/*
+
 my1stcallback= (a,b,callback)=>{
 
     setTimeout(() => {
@@ -45,12 +45,13 @@ my1stcallback(130,20,(error,result)=>{
         return console.log(error);
     }
     console.log("success"+result)
-})*/
+})
+console.log("end of calback");
 /*
 app.get('/getEmp',function(request,response){
     GetEmpList(); 
 })*/
-
+/*
 //call back chain
 my2ndcallback= (a,b,callback)=>{
 
@@ -79,6 +80,8 @@ my2ndcallback(130,20,(error,result)=>{
     }
     console.log("success data1"+result)
 })
+
+*/
 
 /*
 const doWorkCallback = (callback) => {

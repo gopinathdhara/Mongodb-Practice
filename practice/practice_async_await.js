@@ -26,6 +26,8 @@ doWork().then((result) => {
 })*/
 
 // async await is like promise chaining and make synchronized
+ console.log('start');
+ /*
 let multiply= (a,b)=>{
 
     return new Promise((resolve,reject)=>{
@@ -51,4 +53,53 @@ mydoworkasync(-10,30).then((result)=>{
     console.log(result);
 }).catch((e)=>{
     console.log(e);
-})
+})*/
+async function f() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+
+  let result = await promise; // wait until the promise resolves (*)
+
+  //alert(result); // "done!"
+}
+
+f();
+console.log('end');
+/*
+let getData= ()=>{
+
+    return new Promise((resolve,reject)=>{
+	
+			 fs.readFile('./users.json', 'utf-8', function(err, data) {
+
+					if(err) {
+					  reject("error for read");
+					}
+					else {
+					  try {
+						  data = JSON.parse(data);
+						  resolve(data);
+					  }
+					  catch (e) {
+						  reject("invalid json file");
+					  }
+					}
+				  });
+
+    })
+}
+
+mydoworkasync=async()=>{
+	
+	try{
+		let m1=await getData();
+		console.log(m1);
+	}catch(err){
+		console.log(err);
+	}
+    
+}
+mydoworkasync();
+*/

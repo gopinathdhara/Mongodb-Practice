@@ -65,7 +65,7 @@ add(1, 1).then((sum) => {
     console.log(e)
 })*/
 
-/*
+console.log("start promise");
 let add= (a,b)=>{
 
     return new Promise((resolve,reject)=>{
@@ -96,8 +96,8 @@ add(3,4).then((sum1)=>{
 }).catch((error)=>{
     console.log(error);
 })
-*/
-
+console.log("end promise");
+/*
 let dbfetch1= (id)=>{
     return new Promise((resolve,reject)=>{
         con.query('SELECT e.id, e.name, e.address, e.email FROM employees e where e.id='+id, (error, result) => {
@@ -109,7 +109,7 @@ let dbfetch1= (id)=>{
             }
         });
     })
-}
+}*/
 
 /*
 dbfetch1(1).then((result1)=>{
@@ -120,5 +120,5 @@ dbfetch1(1).then((result1)=>{
 })*/
 
 module.exports = {
-    dbfetch1,
+    //dbfetch1,
   };

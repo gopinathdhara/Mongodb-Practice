@@ -1,0 +1,49 @@
+<script>
+let a=5;
+let b=10;
+let c=a+b;
+console.log(c);
+//to remove dependent code problem we can use callback
+function asyncfn(cb1,cb2,cb3) {
+  setTimeout(function(){ 
+	
+	let x=10;
+	let y=10;
+	let c=x+y;
+	cb1(c,cb2,cb3);
+	
+  }, 3000);
+}
+function dependentcode1(sum,cb2,cb3){
+
+	setTimeout(function(){
+		console.log("1st dep obj");
+		console.log(sum); //dependent code //20
+		console.log(sum*sum); //dependent code //400
+		cb2(sum,cb3);
+		
+	}, 3000);
+}
+function dependentcode2(sum1,cb3){
+
+	setTimeout(function(){
+		console.log("2nd dep obj");
+		console.log(sum1+100); //dependent code //120
+		let x=sum1+100;
+		cb3(x);
+	}, 3000);
+}
+
+function dependentcode3(sum2){
+
+	setTimeout(function(){
+		console.log("3rd dep obj");
+		console.log(sum2+180); //dependent code //300
+		
+	}, 3000);
+}
+let sum=asyncfn(dependentcode1,dependentcode2,dependentcode3);
+
+
+console.log("hi");
+</script>
